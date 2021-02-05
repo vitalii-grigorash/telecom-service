@@ -1,0 +1,32 @@
+.asphalt {
+    display: flex;
+    flex-direction: column;
+    margin: 128px 0 0;
+}
+.asphalt__heading {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 57px;
+    letter-spacing: 0.12em;
+    margin: 0 auto 64px;
+    color: #180000;
+}
+.asphalt__description-container {
+    font-family: 'Open Sans Condensed';
+    max-width: 1140px;
+    margin: 0 auto 128px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: justify;
+    color: #180000;
+}
+.asphalt__description {
+    margin: 0 0 20px;
+}
+.asphalt__description:last-of-type {
+    margin-bottom: 0;
+}

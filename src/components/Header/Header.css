@@ -1,7 +1,7 @@
 .header {
     display: flex;
     align-items: center;
-    margin: 27px 118px 0;
+    margin: 0 118px;
     border-bottom: 1px solid grey;
     padding-bottom: 15px;
 }
@@ -16,22 +16,63 @@
     width: 85px;
     margin-right: 272px;
 }
-.header__info {
+.header-info__map {
     display: flex;
     align-items: center;
-    width: 222px;
+    width: 252px;
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
     line-height: 24px;
-    color: black;
     margin: 0 130px 0 0;
     margin-right: auto;
     text-decoration: none;
-
+    color: #FFFFFF;
 }
-.header__info:hover {
+.header-info__map:hover {
     text-decoration: underline;
+}
+.header-info__map:active {
+    color: #009EE2;
+}
+.header-info__map:active .header-info__icon-vector  {
+    background-image: url(../../images/svg/vector-blue.svg);
+}
+.header-info__icon-vector {
+    background-image: url(../../images/svg/vector.svg);
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 28px;
+    margin-right: 15px;
+}
+.header-info__email {
+    display: flex;
+    align-items: center;
+    width: 252px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 24px;
+    margin: 0 130px 0 0;
+    margin-right: auto;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.header-info__email:hover {
+    text-decoration: underline;
+}
+.header-info__email:active {
+    color: #009EE2;
+}
+.header-info__email:active .header-info__icon-email  {
+    background-image: url(../../images/svg/email-icon-blue.svg);
+}
+.header-info__icon-email {
+    background-image: url(../../images/svg/email-icon.svg);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 28px;
+    margin: 17px 15px auto 0;
 }
 .phone-numbers__container {
     display: flex;
@@ -44,20 +85,33 @@
     align-items: center;
     margin: 0;
 }
-.phone-numbers__number a {
+.phone-numbers__link {
+    display: flex;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
     line-height: 30px;
     text-decoration: none;
-    color: black;
+    color: #FFFFFF;
+}
+.phone-numbers__link:active {
+    color: #009EE2;
+    text-decoration: underline;
+}
+.phone-numbers__link:active .phone-numbers__icon  {
+    background-image: url(../../images/svg/phone-icon-blue.svg);
+}
+.phone-numbers__link:hover {
+    text-decoration: underline;
 }
 .phone-numbers__icon {
-    margin-right: 12px;
+    background-image: url(../../images/svg/phone-icon.svg);
+    background-repeat: no-repeat;
     width: 20px;
     height: 20px;
+    margin: auto 15px auto 0;
 }
-.header__button {
+.button-green {
     width: 269px;
     height: 72px;
     border-radius: 6px;
@@ -66,7 +120,17 @@
     color: white;
     padding: 0;
 }
-.header__button-text {
+.button-green:hover {
+    border: 2px solid white;
+}
+.button-green:active {
+    border: 2px solid white;
+    box-shadow: inset 10px 12px 16px 1px rgba(0, 0, 0, 0.4);
+}
+.button-green:focus {
+    outline: none;
+}
+.button-green__text {
     font-family: 'Amatic SC', cursive;
     font-style: normal;
     font-weight: bold;
