@@ -1,0 +1,76 @@
+.header {
+    display: flex;
+    align-items: center;
+    margin: 27px 118px 0;
+    border-bottom: 1px solid grey;
+    padding-bottom: 15px;
+}
+.header__row {
+    display: flex;
+    font-family: 'Open Sans Condensed', sans-serif;
+    align-items: center;
+    width: 100%;
+}
+.header__logo {
+    height: 100px;
+    width: 85px;
+    margin-right: 272px;
+}
+.header__info {
+    display: flex;
+    align-items: center;
+    width: 222px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 24px;
+    color: black;
+    margin: 0 130px 0 0;
+    margin-right: auto;
+    text-decoration: none;
+
+}
+.header__info:hover {
+    text-decoration: underline;
+}
+.phone-numbers__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+}
+.phone-numbers__number {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.phone-numbers__number a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    text-decoration: none;
+    color: black;
+}
+.phone-numbers__icon {
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+}
+.header__button {
+    width: 269px;
+    height: 72px;
+    border-radius: 6px;
+    border: none;
+    background-color: #61CE70;
+    color: white;
+    padding: 0;
+}
+.header__button-text {
+    font-family: 'Amatic SC', cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    margin: 0;
+}
