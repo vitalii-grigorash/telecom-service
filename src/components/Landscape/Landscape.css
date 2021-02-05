@@ -1,3 +1,44 @@
 .landscape {
-    
+    display: flex;
+    flex-direction: column;
+    margin: 180px 0 0;
+}
+.landscape__heading {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 57px;
+    letter-spacing: 0.12em;
+    margin: 0 auto 64px;
+    color: #180000;
+}
+.landscape__heading-container {
+    display: flex;
+}
+.landscape__description-container {
+    font-family: 'Open Sans Condensed';
+    max-width: 570px;
+    margin: 0 auto 22px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 24px;
+    color: #180000;
+}
+.landscape__description {
+    margin: 0 0 16px;
+}
+.landscape__description:last-of-type {
+    margin-bottom: 0;
+}
+.landscape__lists {
+    padding: 0 0 0 23px;
+    margin: 8px 0 0 0;
+    line-height: 29px;
+}
+.landscape__list {
+}
+.landscape__list::marker {
+    color: #61CE70;
 }
