@@ -1,7 +1,11 @@
 import React from 'react';
 import logo from '../../images/logo-1.jpg';
 
-function Header() {
+function Header(props) {
+
+  const { 
+    onOpenPopup,
+} = props;
 
   return (
 
@@ -38,7 +42,7 @@ function Header() {
         </div>
 
         <button className="button-green" type="button">
-          <p className="button-green__text">Оставить заявку</p>
+          <p className="button-green__text" onClick={onOpenPopup}>Оставить заявку</p>
         </button>
 
       </div>

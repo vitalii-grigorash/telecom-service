@@ -1,7 +1,11 @@
 import React from 'react';
 import AsphaltCards from "../AsphaltCards/AsphaltCards"
 
-function Asphalt () {
+function Asphalt (props) {
+
+    const { 
+        onOpenPopup,
+    } = props;
   
     return (
         <div className="asphalt">
@@ -20,7 +24,9 @@ function Asphalt () {
                     стоимость.
                 </p>
             </div>
-            <AsphaltCards />
+            <AsphaltCards
+                onOpenPopup={onOpenPopup}
+            />
         </div>
     );
   }

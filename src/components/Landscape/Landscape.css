@@ -13,13 +13,18 @@
     margin: 0 auto 64px;
     color: #180000;
 }
+.landscape__heading-row {
+    display: flex;
+    margin: 0 auto 0;
+}
 .landscape__heading-container {
     display: flex;
+    flex-direction: column;
 }
 .landscape__description-container {
     font-family: 'Open Sans Condensed';
     max-width: 570px;
-    margin: 0 auto 22px;
+    margin: 0 67px 22px;
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
@@ -41,4 +46,14 @@
 }
 .landscape__list::marker {
     color: #61CE70;
+}
+.landscape__img {
+    width: 299px;
+    height: 283px;
+    align-self: center;
+}
+.landscape__img-grass {
+    width: 1140px;
+    height: 153px;
+    margin: 22px auto -30px;
 }

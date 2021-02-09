@@ -4,7 +4,11 @@ import imgTwo from '../../images/img-2.jpg'
 import imgThree from '../../images/img-3.jpg'
 import imgFour from '../../images/img-4.jpg'
 
-function AsphaltCards () {
+function AsphaltCards (props) {
+
+    const { 
+        onOpenPopup,
+    } = props;
   
     return (
 
@@ -29,7 +33,7 @@ function AsphaltCards () {
                         Данные виды работ связаны с нежелательностью «вскрытия» асфальтного полотна и тем самым 
                         нарушения целостности покрытия после окончания асфальтирования.
                     </p>
-                    <button className="about-work-button" type="button">
+                    <button className="about-work-button" type="button" onClick={onOpenPopup}>
                         <p className="about-work-button__text">Оставить заявку</p>
                     </button>
                 </div>
@@ -53,7 +57,7 @@ function AsphaltCards () {
                         Будем рады, если Вы выберете нашу организацию для снятия асфальтобетонного покрытия и укладки асфальта по истечении 
                         срока годности всего «асфальтного полотна».
                     </p>
-                    <button className="about-work-button-left" type="button">
+                    <button className="about-work-button-left" type="button" onClick={onOpenPopup}>
                         <p className="about-work-button__text">Оставить заявку</p>
                     </button>
                 </div>
@@ -69,7 +73,7 @@ function AsphaltCards () {
                         анализ существующего основания отмостки дома и самый экономичный выход из ситуации. При этом просчитав экономику, учитывая стоимость 
                         ремонта и сроки эксплуатации.
                     </p>
-                    <button className="about-work-button" type="button">
+                    <button className="about-work-button" type="button" onClick={onOpenPopup}>
                         <p className="about-work-button__text">Оставить заявку</p>
                     </button>
                 </div>
@@ -83,7 +87,7 @@ function AsphaltCards () {
                         пришёл в состояние естественного износа, зачастую мы предлагаем реконструкцию полотна. Для начала 
                         делаем фрезеровку полотна, далее готовим основание и производим укладку асфальта. Быстро, недорого и долговечно.
                     </p>
-                    <button className="about-work-button-left" type="button">
+                    <button className="about-work-button-left" type="button" onClick={onOpenPopup}>
                         <p className="about-work-button__text">Оставить заявку</p>
                     </button>
                 </div>

@@ -1,3 +1,75 @@
 .landscape-cards {
     
 }
+.about-work__right-green {
+    display: flex;
+    width: 1530px;
+    margin: 0 0 0 auto;
+    background-color: #EFEAD7;
+}
+.about-work__left-green {
+    display: flex;
+    width: 1513px;
+    margin: 0 auto 0 0;
+    background-color: #EFEAD7;
+}
+.about-work__heading-green {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    color: #61CE70;
+    margin: 0;
+    border-bottom: 1px solid #61CE70;
+}
+.about-work-button-green {
+    margin: 32px 0 0 auto;
+    width: 164px;
+    height: 55px;
+    border: 1px solid #61CE70;
+    border-radius: 6px;
+    background-color: #EFEAD7;
+}
+.about-work-button-green:hover {
+    cursor: pointer;
+}
+.about-work-button-green:active {
+    background-color: #61CE70;
+}
+.about-work-button-green:active .about-work-button__text-green {
+    color: #FFFFFF;
+}
+.about-work-button-green:focus {
+    outline: none;
+}
+.about-work-button-left-green {
+    margin: 32px auto 0 0;
+    width: 164px;
+    height: 55px;
+    border: 1px solid #61CE70;
+    border-radius: 6px;
+    background-color: #EFEAD7;
+}
+.about-work-button-left-green:hover {
+    cursor: pointer;
+}
+.about-work-button-left-green:active {
+    background-color: #61CE70;
+}
+.about-work-button-left-green:active .about-work-button__text-green {
+    color: #FFFFFF;
+}
+.about-work-button-left-green:focus {
+    outline: none;
+}
+.about-work-button__text-green {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    color: #61CE70;
+}

@@ -1,0 +1,114 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin: 180px 0 0;
+}
+.footer__heding {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 57px;
+    letter-spacing: 0.12em;
+    color: #180000;
+    margin: 0 auto 0;
+}
+.footer__info-form-container {
+    display: flex;
+    margin: 80px auto 0;
+}
+.footer__info-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 652px;
+    margin: 0 93px 0 0;
+    background: #EAEAEA;
+}
+.header__row_column {
+    flex-direction: column;
+    margin: 32px auto 78px 52px;
+    width: 250px;
+}
+.footer__map {
+    
+}
+.header-info__email_black {
+    color: #180000;
+    margin: 20px 0;
+}
+.phone-numbers__link_black {
+    color: #180000;
+}
+.header-info__map_black {
+    color: #180000;
+}
+.phone-numbers__icon_black {
+    background-image: url(../../images/svg/phone-icon-black.svg); 
+}
+.header-info__icon-email_black {
+    background-image: url(../../images/svg/email-icon-black.svg);
+}
+.header-info__icon-vector_black {
+    background-image: url(../../images/svg/vector-black.svg);
+}
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+}
+.footer__form-heading {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    color: #000000;
+    margin: 0 0 32px;
+}
+.footer__form-span {
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 24px;
+    color: #000000;
+    margin: 16px auto 8px 0;
+}
+.footer__form-span:first-of-type {
+    margin-top: 0;
+}
+.footer__form-input {
+    background: #EAEAEA;
+    border-radius: 5px;
+    border: none;
+    height: 55px;
+    padding: 0 10px;
+}
+.footer__form-input:focus {
+    outline: none;
+}
+.footer__form-textarea {
+    background: #EAEAEA;
+    border-radius: 5px;
+    border: none; 
+    height: 148px;
+    padding-left: 10px;
+    padding-right: 10px;
+    resize: none;
+    margin-bottom: 64px;
+}
+.footer__form-textarea:focus {
+    outline: none;
+}
+.button-green_footer {
+    margin: 0 0 0 auto;
+}
+.footer__copyright {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    margin: 128px auto 64px;
+}
