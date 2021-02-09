@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../../images/logo-1.jpg';
 
+// Разобраться с сылками в шапке, пропали ховеры
+
 function Header(props) {
 
   const { 
@@ -15,30 +17,30 @@ function Header(props) {
 
       <div className="header__row">
 
-        <a href="https://yandex.ru/maps/-/CCUMu0GBkC" target="_blank" rel="nofollow noreferrer" className="header-info__map">
-          <div className="header-info__icon-vector"></div>
+        <div href="https://yandex.ru/maps/-/CCUMu0GBkC" target="_blank" rel="nofollow noreferrer" className="header-info__map">
+          <p className="header-info__icon-vector"></p>
           г. Санкт-Петербург, проспект Обуховской обороны, д. 199
-        </a>
+        </div>
 
-        <a href="mailto:spb178.com@yandex.ru" className="header-info__email">
-          <div className="header-info__icon-email"></div>
+        <div href="mailto:spb178.com@yandex.ru" className="header-info__email">
+          <p className="header-info__icon-email"></p>
           spb178.com@yandex.ru
-        </a>
+        </div>
 
         <div className="phone-numbers__container">
-          <p className="phone-numbers__number">
+          <div className="phone-numbers__number">
             <a href="tel:+78124545578" className="phone-numbers__link">
-              <div className="phone-numbers__icon"></div>
+              <p className="phone-numbers__icon"></p>
               +7 (812) 454-55-78
             </a>
-          </p>
+          </div>
 
-          <p className="phone-numbers__number">
+          <div className="phone-numbers__number">
             <a href="tel:+79219476179" className="phone-numbers__link">
-              <div className="phone-numbers__icon"></div>
+              <p className="phone-numbers__icon"></p>
               +7 (921) 947-61-79
             </a>
-          </p>
+          </div>
         </div>
 
         <button className="button-green" type="button">
