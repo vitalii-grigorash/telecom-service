@@ -1,8 +1,6 @@
 import React from 'react';
 import logo from '../../images/logo-1.jpg';
 
-// Разобраться с сылками в шапке, пропали ховеры
-
 function Header(props) {
 
   const { 
@@ -17,15 +15,15 @@ function Header(props) {
 
       <div className="header__row">
 
-        <div href="https://yandex.ru/maps/-/CCUMu0GBkC" target="_blank" rel="nofollow noreferrer" className="header-info__map">
+        <a href="https://yandex.ru/maps/-/CCUMu0GBkC" target="_blank" rel="nofollow noreferrer" className="header-info__map">
           <p className="header-info__icon-vector"></p>
           г. Санкт-Петербург, проспект Обуховской обороны, д. 199
-        </div>
+        </a>
 
-        <div href="mailto:spb178.com@yandex.ru" className="header-info__email">
+        <a href="mailto:spb178.com@yandex.ru" className="header-info__email">
           <p className="header-info__icon-email"></p>
           spb178.com@yandex.ru
-        </div>
+        </a>
 
         <div className="phone-numbers__container">
           <div className="phone-numbers__number">
