@@ -4,21 +4,9 @@ import { Validation } from '../../utils/Validation';
 
 function Footer() {
 
-    // const { 
-    //     onSendEmail,
-    // } = props;
-
     const name = Validation();
     const number = Validation();
     const description = Validation();
-
-    // function submitForm(evt) {
-    //     evt.preventDefault();
-    //     onSendEmail(name.value, number.value, description.value);
-    //     name.setValue('');
-    //     number.setValue('');
-    //     description.setValue('');
-    // }
 
     return (
         <div className="footer">
@@ -69,7 +57,6 @@ function Footer() {
 
                 <form 
                     className="footer__form"
-                    // onSubmit={submitForm}
                     action="https://formspree.io/f/xzbkwleg"
                     method="POST"
                 >
@@ -81,7 +68,7 @@ function Footer() {
                         type="text"
                         className="footer__form-input"
                         id="name-input"
-                        name="name"
+                        name="Имя"
                         value={name.value}
                         onChange={name.onChange}
                         minLength="2"
@@ -96,7 +83,7 @@ function Footer() {
                         type="text"
                         className="footer__form-input"
                         id="number-input"
-                        name="number"
+                        name="Номер телефона"
                         value={number.value}
                         onChange={number.onChange}
                         minLength="3"
@@ -110,7 +97,7 @@ function Footer() {
                     <textarea 
                         type="text"
                         className="footer__form-textarea"
-                        name="description"
+                        name="Комментарии"
                         value={description.value}
                         onChange={description.onChange}
                     ></textarea>

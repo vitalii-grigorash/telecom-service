@@ -14,10 +14,6 @@ function App() {
   function handlePopupClose () {
     setPopupOpen(false);
   }
-
-  // function handleSendEmail(name, number, description) {
-  //   console.log(name, number, description);
-  // }
   
   return (
     <div className="app">
@@ -26,14 +22,11 @@ function App() {
         onOpenPopup={handlePopupOpen}
       />
 
-      <Footer
-        // onSendEmail={handleSendEmail}
-      />
+      <Footer/>
 
       <Popup
         isOpen={isPopupOpen}
         onClose={handlePopupClose}
-        // onSendEmail={handleSendEmail}
       />
 
     </div>

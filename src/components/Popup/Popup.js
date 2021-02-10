@@ -6,7 +6,6 @@ function Popup(props) {
     const { 
         isOpen,
         onClose,
-        // onSendEmail,
     } = props;
 
     const name = Validation();
@@ -22,12 +21,6 @@ function Popup(props) {
         number.setErrorMessage('');
     }
 
-    // function submitForm(evt) {
-    //     evt.preventDefault();
-    //     onSendEmail(name.value, number.value, description.value);
-    //     closePopup();
-    // }
-
     const handleOverlayClose = (evt) => {
         if (evt.target.classList.contains('popup_opened')) {
             closePopup();
@@ -41,7 +34,6 @@ function Popup(props) {
 
             <form 
                 className="footer__form footer__form_type-popup"
-                // onSubmit={submitForm}
                 action="https://formspree.io/f/xzbkwleg"
                 method="POST"
             >
@@ -59,7 +51,7 @@ function Popup(props) {
                     type="text"
                     className="footer__form-input"
                     id="name-input"
-                    name="name"
+                    name="Имя"
                     value={name.value}
                     onChange={name.onChange}
                     minLength="2"
@@ -74,7 +66,7 @@ function Popup(props) {
                     type="text"
                     className="footer__form-input"
                     id="number-input"
-                    name="number"
+                    name="Номер телефона"
                     value={number.value}
                     onChange={number.onChange}
                     minLength="3"
@@ -88,7 +80,7 @@ function Popup(props) {
                 <textarea 
                     type="text"
                     className="footer__form-textarea"
-                    name="description"
+                    name="Комментарии"
                     value={description.value}
                     onChange={description.onChange}
                 ></textarea>
