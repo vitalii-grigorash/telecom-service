@@ -3,17 +3,23 @@
     position: fixed;
     visibility: hidden;
     opacity: 0;
-    transition: visibility .4s, opacity .4s linear;
+    transition: visibility .3s, opacity .3s linear;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    background-color:rgba(0, 0, 0, .9);
+    background-color:rgba(0, 0, 0, .4);
 }
 .popup_opened {
     visibility: visible;
     opacity: 1;
     transition: opacity .4s;
+}
+.popup__form-background {
+    margin: auto;
+    background-color: #000000;
+    padding: 90px 80px;
+    border-radius: 5px;
 }
 .popup__close-button {
     background-image: url('../../images/svg/close-button-icon.svg');
@@ -48,4 +54,9 @@
 }
 .footer__form-span_type-popup {
     color: #FFFFFF;
+}
+.form__input_error {
+    font-family: 'Open Sans Condensed';
+    color: #ff0000;
+    height: 16px;
 }

@@ -11,6 +11,7 @@ function LandscapeCards(props) {
 
   return (
     <div className="landscape-cards">
+
       <div className="about-work">
 
         <div className="about-work__right-green">
@@ -66,6 +67,7 @@ function LandscapeCards(props) {
         </div>
 
       </div>
+      
     </div>
   );
 }

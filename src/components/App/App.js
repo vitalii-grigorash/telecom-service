@@ -1,4 +1,4 @@
-import React, {useState, useCallback} from 'react';
+import React, {useState} from 'react';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer'
 import Popup from '../Popup/Popup'
@@ -9,27 +9,15 @@ function App() {
 
   function handlePopupOpen () {
     setPopupOpen(true);
-    document.addEventListener('keyup', memoizedOnKeyup);
   }
 
   function handlePopupClose () {
     setPopupOpen(false);
-    document.removeEventListener('keyup', memoizedOnKeyup);
   }
 
-  function handleEscClose (evt) {
-    if (evt.key === 'Escape') {
-      handlePopupClose();
-    }
-  }
-
-  const memoizedOnKeyup = useCallback(handleEscClose, [handleEscClose]);
-
-  const onOverlayClose = (evt) => {
-    if (evt.target.classList.contains('popup_opened')) {
-      setPopupOpen(false);
-    }
-  }
+  // function handleSendEmail(name, number, description) {
+  //   console.log(name, number, description);
+  // }
   
   return (
     <div className="app">
@@ -38,12 +26,14 @@ function App() {
         onOpenPopup={handlePopupOpen}
       />
 
-      <Footer />
+      <Footer
+        // onSendEmail={handleSendEmail}
+      />
 
       <Popup
         isOpen={isPopupOpen}
         onClose={handlePopupClose}
-        onOverlayClose={onOverlayClose}
+        // onSendEmail={handleSendEmail}
       />
 
     </div>

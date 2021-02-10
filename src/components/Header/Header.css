@@ -122,6 +122,7 @@
 }
 .button-green:hover {
     border: 2px solid white;
+    cursor: pointer;
 }
 .button-green:active {
     border: 2px solid white;

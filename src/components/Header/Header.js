@@ -26,6 +26,7 @@ function Header(props) {
         </a>
 
         <div className="phone-numbers__container">
+
           <div className="phone-numbers__number">
             <a href="tel:+78124545578" className="phone-numbers__link">
               <p className="phone-numbers__icon"></p>
@@ -39,6 +40,7 @@ function Header(props) {
               +7 (921) 947-61-79
             </a>
           </div>
+          
         </div>
 
         <button className="button-green" type="button">

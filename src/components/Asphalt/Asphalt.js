@@ -9,7 +9,9 @@ function Asphalt (props) {
   
     return (
         <div className="asphalt">
+
             <h1 className="asphalt__heading">Асфальтирование</h1>
+
             <div className="asphalt__description-container">
                 <p className="asphalt__description">
                     Компания “ТелекомСервис” способна спроектировать дороги с учетом необходимого класса назначения, и, после проведенных геодезических 
@@ -24,9 +26,11 @@ function Asphalt (props) {
                     стоимость.
                 </p>
             </div>
+
             <AsphaltCards
                 onOpenPopup={onOpenPopup}
             />
+            
         </div>
     );
   }

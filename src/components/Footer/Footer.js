@@ -1,7 +1,24 @@
 import React from 'react';
 import map from '../../images/map.jpg'
+import { Validation } from '../../utils/Validation';
 
 function Footer() {
+
+    // const { 
+    //     onSendEmail,
+    // } = props;
+
+    const name = Validation();
+    const number = Validation();
+    const description = Validation();
+
+    // function submitForm(evt) {
+    //     evt.preventDefault();
+    //     onSendEmail(name.value, number.value, description.value);
+    //     name.setValue('');
+    //     number.setValue('');
+    //     description.setValue('');
+    // }
 
     return (
         <div className="footer">
@@ -50,7 +67,12 @@ function Footer() {
 
                 </div>
 
-                <form className="footer__form">
+                <form 
+                    className="footer__form"
+                    // onSubmit={submitForm}
+                    action="https://formspree.io/f/xzbkwleg"
+                    method="POST"
+                >
 
                     <h3 className="footer__form-heading">Остались вопросы? Наш специалист свяжется с вами</h3>
 
@@ -58,25 +80,44 @@ function Footer() {
                     <input
                         type="text"
                         className="footer__form-input"
+                        id="name-input"
+                        name="name"
+                        value={name.value}
+                        onChange={name.onChange}
                         minLength="2"
-                        maxLength="40"
+                        maxLength="50"
                         pattern="[A-Za-zа-яёА-ЯЁ -]{1,}"
                         required
                     />
+                    <span id="name-input" className="form__input_error">{name.errorMessage}</span>
 
                     <span className="footer__form-span">Ваш контактный номер</span>
                     <input
                         type="text"
                         className="footer__form-input"
-                        minLength="7"
-                        maxLength="13"
+                        id="number-input"
+                        name="number"
+                        value={number.value}
+                        onChange={number.onChange}
+                        minLength="3"
+                        maxLength="20"
+                        pattern='^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$'
                         required
                     />
+                    <span id="number-input" className="form__input_error">{number.errorMessage}</span>
 
                     <span className="footer__form-span">Комментарии</span>
-                    <textarea className="footer__form-textarea"></textarea>
+                    <textarea 
+                        type="text"
+                        className="footer__form-textarea"
+                        name="description"
+                        value={description.value}
+                        onChange={description.onChange}
+                    ></textarea>
 
-                    <button className="button-green button-green_footer">
+                    <button 
+                        className="button-green button-green_footer"
+                        type='submit'>
                         <p className="button-green__text">Оставить заявку</p>
                     </button>
 
