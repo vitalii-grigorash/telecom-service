@@ -24,6 +24,7 @@
     max-width: 652px;
     margin: 0 93px 0 0;
     background: #EAEAEA;
+    overflow: hidden;
 }
 .header__row_column {
     flex-direction: column;
@@ -31,7 +32,10 @@
     width: 250px;
 }
 .footer__map {
-    
+    background-image: url(../../images/map.jpg); 
+    width: 652px;
+    height: 335px;
+    background-repeat: no-repeat;
 }
 .header-info__container_black {
     color: #180000;
@@ -99,7 +103,7 @@
     outline: none;
 }
 .button-green_footer {
-    margin: 0 0 0 auto;
+    margin: auto 0 0 auto;
 }
 .footer__copyright {
     font-family: 'Amatic SC';
@@ -109,4 +113,45 @@
     line-height: 30px;
     color: #000000;
     margin: 128px auto 64px;
+}
+@media screen and (max-width: 1324px) {
+    .footer {
+        margin-top: 128px;
+    }
+    .footer__info-container {
+        max-width: 470px;
+        margin-right: 62px;
+    }
+    .header-info__container_black {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .phone-numbers__link_black {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .phone-numbers__icon_black {
+        width: 20px;
+        height: 20px;
+        margin: auto 15px auto 0;
+    }
+    .header-info__icon-email_black {
+        width: 18px;
+        height: 28px;
+        margin: 19px 15px auto 0;
+        background-size: contain;
+    }
+    .header-info__icon-vector_black {
+        width: 41px;
+        height: 28px;
+        margin-right: 15px;
+        background-size: contain;
+    }
+    .header__row_column {
+        margin: 32px auto 78px 39px;
+    }
+    .footer__form {
+        width: 428px;
+    }
 }

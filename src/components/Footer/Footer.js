@@ -1,5 +1,5 @@
 import React from 'react';
-import map from '../../images/map.jpg'
+// import map from '../../images/map.jpg'
 import { Validation } from '../../utils/Validation';
 
 function Footer() {
@@ -17,8 +17,8 @@ function Footer() {
 
                 <div className="footer__info-container">
 
-                    <a href="https://yandex.ru/maps/-/CCUMu0GBkC" target="_blank" rel="nofollow noreferrer">
-                        <img className="footer__map" src={map} alt="Карта" />    
+                    <a href="https://yandex.ru/maps/-/CCUMu0GBkC" target="_blank" rel="nofollow noreferrer" className="footer__map">
+                        {/* <img className="footer__map" src={map} alt="Карта" />     */}
                     </a>
 
                     <div className="header__row header__row_column">

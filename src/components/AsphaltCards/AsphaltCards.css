@@ -128,3 +128,17 @@
 .about-work-button-left:focus {
     outline: none;
 }
+@media screen and (max-width: 1150px) {
+    .about-work__description-container {
+        max-width: 402px;
+    }
+    .about-work__description-container-left {
+        max-width: 402px;
+    }
+    .about-work__img {
+        width: 480px;
+    }
+    .about-work__img-left {
+        width: 480px;
+    }
+}

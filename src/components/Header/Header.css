@@ -1,7 +1,7 @@
 .header {
     display: flex;
     margin: 0 118px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #FFFFFF;
     padding-bottom: 15px;
 }
 .header__row {
@@ -82,7 +82,7 @@
 .header-info__icon-email {
     background-image: url(../../images/svg/email-icon.svg);
     background-repeat: no-repeat;
-    width: 18px;
+    width: 19px;
     height: 28px;
     margin: 17px 15px auto 0;
 }
@@ -113,4 +113,51 @@
     font-size: 36px;
     line-height: 45px;
     margin: 0;
+}
+@media screen and (max-width: 1640px) {
+    .header {
+        margin: 0 64px;
+    }
+    .header__logo {
+        margin-right: 171px;
+    }
+}
+@media screen and (max-width: 1324px) {
+    .header {
+        margin: 0 32px;
+    }
+    .header__logo {
+        margin-right: 60px;
+    }
+    .header-info__container {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .phone-numbers__link {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .header-info__container_location {
+        max-width: 190px;
+    }
+    .phone-numbers__icon {
+        width: 15px;
+        height: 15px;
+        margin: auto 7px auto 0;
+        background-size: cover;
+    }
+    .header-info__icon-vector {
+        width: 24px;
+        height: 21px;
+        background-size: cover;
+        margin-right: 7px;
+    }
+    .header-info__icon-email {
+        width: 13px;
+        height: 10px;
+        background-size: cover;
+        margin: 7px 7px auto 0;
+    }
 }
