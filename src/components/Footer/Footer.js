@@ -24,29 +24,26 @@ function Footer() {
                     <div className="header__row header__row_column">
 
                         <div className="phone-numbers__container">
-
-                            <div className="phone-numbers__number">
-                                <a href="tel:+78124545578" className="phone-numbers__link phone-numbers__link_black">
-                                    <p className="phone-numbers__icon phone-numbers__icon_black"></p>
-                                    +7 (812) 454-55-78
-                                </a>
-                            </div>
-
-                            <div className="phone-numbers__number">
-                                <a href="tel:+79219476179" className="phone-numbers__link phone-numbers__link_black">
-                                    <p className="phone-numbers__icon phone-numbers__icon_black"></p>
-                                    +7 (921) 947-61-79
-                                </a>
-                            </div>
+                           
+                            <a href="tel:+78124545578" className="phone-numbers__link phone-numbers__link_black">
+                                <p className="phone-numbers__icon phone-numbers__icon_black"></p>
+                                +7 (812) 454-55-78
+                            </a>
+                            
+        
+                            <a href="tel:+79219476179" className="phone-numbers__link phone-numbers__link_black">
+                                <p className="phone-numbers__icon phone-numbers__icon_black"></p>
+                                +7 (921) 947-61-79
+                            </a>
 
                         </div>
 
-                        <a href="mailto:spb178.com@yandex.ru" className="header-info__email header-info__email_black">
+                        <a href="mailto:spb178.com@yandex.ru" className="header-info__container header-info__container_black">
                             <p className="header-info__icon-email header-info__icon-email_black"></p>
                             spb178.com@yandex.ru
                         </a>
 
-                        <a href="https://yandex.ru/maps/-/CCUMu0GBkC" target="_blank" rel="nofollow noreferrer" className="header-info__map header-info__map_black">
+                        <a href="https://yandex.ru/maps/-/CCUMu0GBkC" target="_blank" rel="nofollow noreferrer" className="header-info__container header-info__container_black">
                             <p className="header-info__icon-vector header-info__icon-vector_black"></p>
                             г. Санкт-Петербург, проспект Обуховской обороны, д. 199
                         </a>

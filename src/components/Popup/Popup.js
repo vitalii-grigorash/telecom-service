@@ -32,67 +32,67 @@ function Popup(props) {
 
             <div className="popup__form-background">
 
-            <form 
-                className="footer__form footer__form_type-popup"
-                action="https://formspree.io/f/xzbkwleg"
-                method="POST"
-            >
-
-                <button
-                    type='button'
-                    className='popup__close-button'
-                    onClick={closePopup}
-                ></button>
-
-                <h3 className="footer__form-heading footer__form-heading_type-popup">Остались вопросы? Наш специалист свяжется с вами</h3>
-
-                <span className="footer__form-span footer__form-span_type-popup">Ваше имя</span>
-                <input
-                    type="text"
-                    className="footer__form-input"
-                    id="name-input"
-                    name="Имя"
-                    value={name.value}
-                    onChange={name.onChange}
-                    minLength="2"
-                    maxLength="50"
-                    pattern="[A-Za-zа-яёА-ЯЁ -]{1,}"
-                    required
-                />
-                <span id="name-input" className="form__input_error">{name.errorMessage}</span>
-
-                <span className="footer__form-span footer__form-span_type-popup">Ваш контактный номер</span>
-                <input
-                    type="text"
-                    className="footer__form-input"
-                    id="number-input"
-                    name="Номер телефона"
-                    value={number.value}
-                    onChange={number.onChange}
-                    minLength="3"
-                    maxLength="20"
-                    pattern='^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$'
-                    required
-                />
-                <span id="number-input" className="form__input_error">{number.errorMessage}</span>
-
-                <span className="footer__form-span footer__form-span_type-popup">Комментарии</span>
-                <textarea 
-                    type="text"
-                    className="footer__form-textarea"
-                    name="Комментарии"
-                    value={description.value}
-                    onChange={description.onChange}
-                ></textarea>
-
-                <button 
-                    className="button-green button-green_footer"  
-                    type='submit'
+                <form 
+                    className="footer__form footer__form_type-popup"
+                    action="https://formspree.io/f/xzbkwleg"
+                    method="POST"
                 >
-                    <p className="button-green__text">Оставить заявку</p>
-                </button>
 
-            </form>
+                    <button
+                        type='button'
+                        className='popup__close-button'
+                        onClick={closePopup}
+                    ></button>
+
+                    <h3 className="footer__form-heading footer__form-heading_type-popup">Остались вопросы? Наш специалист свяжется с вами</h3>
+
+                    <span className="footer__form-span footer__form-span_type-popup">Ваше имя</span>
+                    <input
+                        type="text"
+                        className="footer__form-input"
+                        id="name-input"
+                        name="Имя"
+                        value={name.value}
+                        onChange={name.onChange}
+                        minLength="2"
+                        maxLength="50"
+                        pattern="[A-Za-zа-яёА-ЯЁ -]{1,}"
+                        required
+                    />
+                    <span id="name-input" className="form__input_error">{name.errorMessage}</span>
+
+                    <span className="footer__form-span footer__form-span_type-popup">Ваш контактный номер</span>
+                    <input
+                        type="text"
+                        className="footer__form-input"
+                        id="number-input"
+                        name="Номер телефона"
+                        value={number.value}
+                        onChange={number.onChange}
+                        minLength="3"
+                        maxLength="20"
+                        pattern='^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$'
+                        required
+                    />
+                    <span id="number-input" className="form__input_error">{number.errorMessage}</span>
+
+                    <span className="footer__form-span footer__form-span_type-popup">Комментарии</span>
+                    <textarea 
+                        type="text"
+                        className="footer__form-textarea"
+                        name="Комментарии"
+                        value={description.value}
+                        onChange={description.onChange}
+                    ></textarea>
+
+                    <button 
+                        className="button-green button-green_footer"  
+                        type='submit'
+                    >
+                        <p className="button-green__text">Оставить заявку</p>
+                    </button>
+
+                </form>
 
             </div>
 

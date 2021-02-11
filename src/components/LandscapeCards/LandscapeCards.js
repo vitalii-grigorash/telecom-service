@@ -10,12 +10,13 @@ function LandscapeCards(props) {
 } = props;
 
   return (
-    <div className="landscape-cards">
+    <div className="about-work">
 
-      <div className="about-work">
-
-        <div className="about-work__right-green">
+      <div className="about-work__right">
+        <div className="about-work__img-container">
           <img className="about-work__img" src={cardGrass} alt="Фотография образец" />
+        </div>
+        <div className="about-work__container about-work__container_green">
           <div className="about-work__description-container">
             <h3 className="about-work__heading-green">Устройство газонов</h3>
             <p className="about-work__description">Это рекультивация земельного участка с заменой существующего грунта на плодородный
@@ -30,9 +31,13 @@ function LandscapeCards(props) {
             </button>
           </div>
         </div>
+      </div>
 
-        <div className="about-work__left-green">
+      <div className="about-work__left">
+        <div className="about-work__img-container-left">
           <img className="about-work__img-left" src={imgFive} alt="Фотография образец" />
+        </div>
+        <div className="about-work__container about-work__container_green">
           <div className="about-work__description-container-left">
             <h3 className="about-work__heading-green">Посадка деревьев, посадка кустарников</h3>
             <p className="about-work__description">Это поле для творчества нашего ландшафтного дизайнера. Оградить дорожки или размежевать
@@ -47,9 +52,13 @@ function LandscapeCards(props) {
             </button>
           </div>
         </div>
+      </div>
 
-        <div className="about-work__right-green">
+      <div className="about-work__right">
+        <div className="about-work__img-container">
           <img className="about-work__img" src={imgSix} alt="Фотография образец" />
+        </div>
+        <div className="about-work__container about-work__container_green">
           <div className="about-work__description-container">
             <h3 className="about-work__heading-green">Снос и посадка зелёных насаждений</h3>
             <p className="about-work__description">Это услуга, которая наиболее востребована. Зачастую, необходим 
@@ -65,9 +74,8 @@ function LandscapeCards(props) {
             </button>
           </div>
         </div>
-
       </div>
-      
+
     </div>
   );
 }

@@ -13,7 +13,7 @@
 .popup_opened {
     visibility: visible;
     opacity: 1;
-    transition: opacity .4s;
+    transition: opacity .3s;
 }
 .popup__form-background {
     margin: auto;
@@ -40,7 +40,6 @@
     outline: none;
 }
 .footer__form_type-popup {
-    margin: auto;
     position: relative;
 }
 .footer__form-heading_type-popup {
