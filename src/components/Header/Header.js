@@ -15,30 +15,21 @@ function Header(props) {
 
       <div className="header__row">
 
-        <a href="https://yandex.ru/maps/-/CCUMu0GBkC" target="_blank" rel="nofollow noreferrer" className="header-info__container header-info__container_location">
-          <p className="header-info__icon-vector"></p>
-          г. Санкт-Петербург, проспект Обуховской обороны, д. 199
-        </a>
-
-        <a href="mailto:spb178.com@yandex.ru" className="header-info__container">
+        <a href="mailto:ooo.telecomservice@yandex.ru" className="header-info__container">
           <p className="header-info__icon-email"></p>
-          spb178.com@yandex.ru
+          ooo.telecomservice@yandex.ru
         </a>
 
-        <div className="phone-numbers__container">
+        <a href="https://yandex.ru/maps/2/saint-petersburg/house/rybatskiy_prospekt_18/Z0kYcwdjTE0OQFtjfXR1cXVrYQ" target="_blank" rel="nofollow noreferrer" className="header-info__container header-info__container_location">
+          <p className="header-info__icon-vector"></p>
+          г. Санкт-Петербург, Рыбацкий проспект, д. 18
+        </a>
 
-          <a href="tel:+78124545578" className="phone-numbers__link">
-            <p className="phone-numbers__icon"></p>
-            +7 (812) 454-55-78
-          </a>
-         
-          <a href="tel:+79219476179" className="phone-numbers__link">
-            <p className="phone-numbers__icon"></p>
-            +7 (921) 947-61-79
-          </a>
+        <a href="tel:+79062681292" className="phone-numbers__link">
+          <p className="phone-numbers__icon"></p>
+          +7 (906) 268-12-92
+        </a>
           
-        </div>
-
         <button className="button-green" type="button">
           <p className="button-green__text" onClick={onOpenPopup}>Оставить заявку</p>
         </button>

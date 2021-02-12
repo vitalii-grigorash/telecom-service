@@ -41,11 +41,6 @@
 .header-info__container:active .header-info__icon-email  {
     background-image: url(../../images/svg/email-icon-blue.svg);
 }
-.phone-numbers__container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto 0 0;
-}
 .phone-numbers__link {
     display: flex;
     font-style: normal;
@@ -54,6 +49,7 @@
     line-height: 30px;
     text-decoration: none;
     color: #FFFFFF;
+    margin-right: auto;
 }
 .phone-numbers__link:hover {
     text-decoration: underline;
@@ -75,7 +71,8 @@
 .header-info__icon-vector {
     background-image: url(../../images/svg/vector.svg);
     background-repeat: no-repeat;
-    width: 41px;
+    background-size: contain;
+    width: 30px;
     height: 28px;
     margin-right: 15px;
 }
@@ -119,15 +116,15 @@
         margin: 0 64px;
     }
     .header__logo {
-        margin-right: 171px;
+        margin-right: 121px;
     }
 }
-@media screen and (max-width: 1324px) {
+@media screen and (max-width: 1384px) {
     .header {
         margin: 0 32px;
     }
     .header__logo {
-        margin-right: 60px;
+        margin-right: 47px;
     }
     .header-info__container {
         font-style: normal;
@@ -140,18 +137,17 @@
         line-height: 22px;
     }
     .header-info__container_location {
-        max-width: 190px;
+        max-width: 160px;
     }
     .phone-numbers__icon {
-        width: 15px;
-        height: 15px;
-        margin: auto 7px auto 0;
+        width: 12px;
+        height: 12px;
+        margin: auto 8px auto 0;
         background-size: cover;
     }
     .header-info__icon-vector {
-        width: 24px;
+        width: 20px;
         height: 21px;
-        background-size: cover;
         margin-right: 7px;
     }
     .header-info__icon-email {

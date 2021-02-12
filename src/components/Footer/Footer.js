@@ -17,35 +17,25 @@ function Footer() {
 
                 <div className="footer__info-container">
 
-                    <a href="https://yandex.ru/maps/-/CCUMu0GBkC" target="_blank" rel="nofollow noreferrer" className="footer__map">
+                    <a href="https://yandex.ru/maps/2/saint-petersburg/house/rybatskiy_prospekt_18/Z0kYcwdjTE0OQFtjfXR1cXVrYQ" target="_blank" rel="nofollow noreferrer" className="footer__map">
                         {/* <img className="footer__map" src={map} alt="Карта" />     */}
                     </a>
 
                     <div className="header__row header__row_column">
-
-                        <div className="phone-numbers__container">
                            
-                            <a href="tel:+78124545578" className="phone-numbers__link phone-numbers__link_black">
-                                <p className="phone-numbers__icon phone-numbers__icon_black"></p>
-                                +7 (812) 454-55-78
-                            </a>
-                            
-        
-                            <a href="tel:+79219476179" className="phone-numbers__link phone-numbers__link_black">
-                                <p className="phone-numbers__icon phone-numbers__icon_black"></p>
-                                +7 (921) 947-61-79
-                            </a>
-
-                        </div>
-
-                        <a href="mailto:spb178.com@yandex.ru" className="header-info__container header-info__container_black">
-                            <p className="header-info__icon-email header-info__icon-email_black"></p>
-                            spb178.com@yandex.ru
+                        <a href="tel:+79062681292" className="phone-numbers__link phone-numbers__link_black">
+                            <p className="phone-numbers__icon phone-numbers__icon_black"></p>
+                            +7 (906) 268-12-92
                         </a>
 
-                        <a href="https://yandex.ru/maps/-/CCUMu0GBkC" target="_blank" rel="nofollow noreferrer" className="header-info__container header-info__container_black">
+                        <a href="mailto:ooo.telecomservice@yandex.ru" className="header-info__container header-info__container_black">
+                            <p className="header-info__icon-email header-info__icon-email_black"></p>
+                            ooo.telecomservice@yandex.ru
+                        </a>
+
+                        <a href="https://yandex.ru/maps/2/saint-petersburg/house/rybatskiy_prospekt_18/Z0kYcwdjTE0OQFtjfXR1cXVrYQ" target="_blank" rel="nofollow noreferrer" className="header-info__container header-info__container_black">
                             <p className="header-info__icon-vector header-info__icon-vector_black"></p>
-                            г. Санкт-Петербург, проспект Обуховской обороны, д. 199
+                            г. Санкт-Петербург, Рыбацкий проспект, д. 18
                         </a>
 
                     </div>
