@@ -7,6 +7,9 @@ function Main (props) {
 
   const { 
     onOpenPopup,
+    isMobilePopupOpen,
+    onMobilePopupOpen,
+    onMobilePopupClose,
 } = props;
   
     return (
@@ -16,6 +19,9 @@ function Main (props) {
 
           <Header
             onOpenPopup={onOpenPopup}
+            onMobilePopupOpen={onMobilePopupOpen}
+            onMobilePopupClose={onMobilePopupClose}
+            isMobilePopupOpen={isMobilePopupOpen}
           />
 
           <div className="heading__container">

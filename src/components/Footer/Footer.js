@@ -1,6 +1,7 @@
 import React from 'react';
-// import map from '../../images/map.jpg'
+import map from '../../images/map.jpg'
 import { Validation } from '../../utils/Validation';
+import logo from '../../images/logo-1.jpg';
 
 function Footer() {
 
@@ -17,8 +18,9 @@ function Footer() {
 
                 <div className="footer__info-container">
 
-                    <a href="https://yandex.ru/maps/2/saint-petersburg/house/rybatskiy_prospekt_18/Z0kYcwdjTE0OQFtjfXR1cXVrYQ" target="_blank" rel="nofollow noreferrer" className="footer__map">
-                        {/* <img className="footer__map" src={map} alt="Карта" />     */}
+                    <a href="https://yandex.ru/maps/2/saint-petersburg/house/rybatskiy_prospekt_18/Z0kYcwdjTE0OQFtjfXR1cXVrYQ" target="_blank" rel="nofollow noreferrer" className="footer__map-container">
+                        <img className="footer__logo" src={logo} alt="Логотип компании ТелекомСервис" />
+                        <img className="footer__map" src={map} alt="Карта" />    
                     </a>
 
                     <div className="header__row header__row_column">
@@ -35,7 +37,7 @@ function Footer() {
 
                         <a href="https://yandex.ru/maps/2/saint-petersburg/house/rybatskiy_prospekt_18/Z0kYcwdjTE0OQFtjfXR1cXVrYQ" target="_blank" rel="nofollow noreferrer" className="header-info__container header-info__container_black">
                             <p className="header-info__icon-vector header-info__icon-vector_black"></p>
-                            г. Санкт-Петербург, Рыбацкий проспект, д. 18
+                            г. Санкт-Петербург, <br/> Рыбацкий проспект, д. 18
                         </a>
 
                     </div>

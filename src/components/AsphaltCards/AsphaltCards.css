@@ -142,3 +142,117 @@
         width: 480px;
     }
 }
+@media screen and (max-width: 990px) {
+    .about-work {
+        width: 720px;
+        margin: 0 auto 0;
+    }
+    .about-work__right {
+        flex-direction: column;
+    }
+    .about-work__left {
+        flex-direction: column;
+    }
+    .about-work__img-container {
+        max-height: 335px;
+        overflow: hidden;
+    }
+    .about-work__img {
+        margin: -90px 0 0;
+        width: 100%;
+        min-height: 700px;
+    }
+    .about-work__img-container-left {
+        order: 0;
+        max-height: 335px;
+        overflow: hidden;
+    }
+    .about-work__img-left {
+        margin: -40px 0 0;
+        width: 100%;
+        min-height: 600px;
+    }
+    .about-work__description-container {
+        max-width: 642px;
+        margin: 32px auto 48px;
+    }
+    .about-work__description-container-left {
+        max-width: 642px;
+        margin: 32px auto 48px;
+    }
+    .about-work__heading {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .about-work__description {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .about-work__description:first-of-type {
+        margin-top: 16px; 
+    }
+    .about-work__lists {
+        font-size: 18px;
+        line-height: 25px;
+        margin: 4px 0 0;
+    }
+    .about-work-button {
+        margin: 16px 0 0 auto;
+    }
+    .about-work-button-left {
+        margin: 16px 0 0 auto;
+    }
+    .about-work-button__text {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+@media screen and (max-width: 730px) {
+    .about-work {
+        width: 395px;
+    }
+    .about-work__img-container {
+        max-height: 183px;
+    }
+    .about-work__img {
+        margin: 0;
+        width: 100%;
+    }
+    .about-work__img-container-left {
+        max-height: 183px;
+    }
+    .about-work__img-left {
+        margin: 0;
+        width: 100%;
+    }
+    .about-work__description-container {
+        max-width: 335px;
+    }
+    .about-work__description-container-left {
+        max-width: 335px;
+    }
+    .about-work__heading {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .about-work__description {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .about-work__lists {
+        font-size: 16px;
+        line-height: 22px;;
+    }
+    .about-work-button__text {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .about-work-button {
+        width: 152px;
+        height: 46px;
+    }
+    .about-work-button-left {
+        width: 152px;
+        height: 46px;
+    }
+}

@@ -1,4 +1,5 @@
 .main {
+    position: relative;
 }
 .main__background {
     background-image: url(../../images/main-background.jpg);
@@ -24,4 +25,35 @@
     margin: 0 0 64px;
     letter-spacing: 0.05em;
     color: #ffffff;
+}
+@media screen and (max-width: 990px) {
+    .main__background {
+        min-height: 779px;
+        padding-top: 23px;
+    }
+    .heading__container {
+        margin: 175px auto 0;
+        max-width: 550px;
+    }
+    .heading__header {
+        font-size: 44px;
+        line-height: 110%;
+        margin: 0 0 48px;
+    }
+}
+@media screen and (max-width: 730px) {
+    .main__background {
+        background-image: url(../../images/main-background-mobile.jpg);
+        min-height: 766px;
+        padding-top: 20px;
+    }
+    .heading__header {
+        font-size: 34px;
+        line-height: 100%;
+        margin: 0 0 32px;
+        max-width: 340px;
+    }
+    .heading__container {
+        margin: 165px auto 0;
+    }
 }

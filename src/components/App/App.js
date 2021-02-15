@@ -7,8 +7,18 @@ function App() {
 
   const [isPopupOpen, setPopupOpen] = useState(false);
 
+  const [isMobilePopupOpen, setIsMobilePopupOpen] = useState(false);
+
   function handlePopupOpen () {
     setPopupOpen(true);
+  }
+
+  function handleMobilePopupOpen() {
+    setIsMobilePopupOpen(true);
+  }
+
+  function handleMobilePopupClose() {
+    setIsMobilePopupOpen(false);
   }
 
   function handlePopupClose () {
@@ -19,7 +29,10 @@ function App() {
     <div className="app">
 
       <Main
+        onMobilePopupOpen={handleMobilePopupOpen}
+        onMobilePopupClose={handleMobilePopupClose}
         onOpenPopup={handlePopupOpen}
+        isMobilePopupOpen={isMobilePopupOpen}
       />
 
       <Footer/>
