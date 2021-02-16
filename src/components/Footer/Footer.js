@@ -3,11 +3,25 @@ import map from '../../images/map.jpg'
 import { Validation } from '../../utils/Validation';
 import logo from '../../images/logo-1.jpg';
 
-function Footer() {
+function Footer(props) {
+
+    const { 
+        onSendForm,
+    } = props;
 
     const name = Validation();
     const number = Validation();
     const description = Validation();
+
+    function handleSubmit(evt) {
+        evt.preventDefault();
+        onSendForm(name.value, number.value, description.value)
+        name.setValue('');
+        number.setValue('');
+        description.setValue('');
+        name.setErrorMessage('');
+        number.setErrorMessage('');
+    }
 
     return (
         <div className="footer">
@@ -46,8 +60,9 @@ function Footer() {
 
                 <form 
                     className="footer__form"
-                    action="https://formspree.io/f/xzbkwleg"
-                    method="POST"
+                    onSubmit={handleSubmit}
+                    // action="https://formspree.io/f/xzbkwleg"
+                    // method="POST"
                 >
 
                     <h3 className="footer__form-heading">Остались вопросы? Наш специалист свяжется с вами</h3>

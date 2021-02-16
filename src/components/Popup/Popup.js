@@ -6,11 +6,18 @@ function Popup(props) {
     const { 
         isOpen,
         onClose,
+        onSendForm,
     } = props;
 
     const name = Validation();
     const number = Validation();
     const description = Validation();
+
+    function handleSubmit(evt) {
+        evt.preventDefault();
+        onSendForm(name.value, number.value, description.value)
+        closePopup();
+    }
 
     function closePopup () {
         onClose();
@@ -34,8 +41,9 @@ function Popup(props) {
 
                 <form 
                     className="footer__form footer__form_type-popup"
-                    action="https://formspree.io/f/xzbkwleg"
-                    method="POST"
+                    onSubmit={handleSubmit}
+                    // action="https://formspree.io/f/xzbkwleg"
+                    // method="POST"
                 >
 
                     <button

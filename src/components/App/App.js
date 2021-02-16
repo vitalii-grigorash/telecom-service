@@ -9,8 +9,16 @@ function App() {
 
   const [isMobilePopupOpen, setIsMobilePopupOpen] = useState(false);
 
+  function handleSendForm(name, number, description) {
+    console.log(name, number, description);
+  }
+
   function handlePopupOpen () {
     setPopupOpen(true);
+  }
+
+  function handlePopupClose () {
+    setPopupOpen(false);
   }
 
   function handleMobilePopupOpen() {
@@ -19,10 +27,6 @@ function App() {
 
   function handleMobilePopupClose() {
     setIsMobilePopupOpen(false);
-  }
-
-  function handlePopupClose () {
-    setPopupOpen(false);
   }
   
   return (
@@ -35,11 +39,14 @@ function App() {
         isMobilePopupOpen={isMobilePopupOpen}
       />
 
-      <Footer/>
+      <Footer
+        onSendForm={handleSendForm}
+      />
 
       <Popup
         isOpen={isPopupOpen}
         onClose={handlePopupClose}
+        onSendForm={handleSendForm}
       />
 
     </div>
