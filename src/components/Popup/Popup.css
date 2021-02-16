@@ -163,7 +163,7 @@
         height: 40px;
     }
 }
-@media screen and (max-height: 425px) {
+@media screen and (max-height: 500px) {
     .popup__form-background {
         padding: 30px 20px;
     }
