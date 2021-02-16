@@ -49,7 +49,7 @@ function Popup(props) {
                     <span className="footer__form-span footer__form-span_type-popup">Ваше имя</span>
                     <input
                         type="text"
-                        className="footer__form-input"
+                        className="footer__form-input footer__form-input_type-popup"
                         id="name-input"
                         name="Имя"
                         value={name.value}
@@ -64,7 +64,7 @@ function Popup(props) {
                     <span className="footer__form-span footer__form-span_type-popup">Ваш контактный номер</span>
                     <input
                         type="text"
-                        className="footer__form-input"
+                        className="footer__form-input footer__form-input_type-popup"
                         id="number-input"
                         name="Номер телефона"
                         value={number.value}
@@ -79,17 +79,17 @@ function Popup(props) {
                     <span className="footer__form-span footer__form-span_type-popup">Комментарии</span>
                     <textarea 
                         type="text"
-                        className="footer__form-textarea"
+                        className="footer__form-textarea footer__form-textarea_type-popup"
                         name="Комментарии"
                         value={description.value}
                         onChange={description.onChange}
                     ></textarea>
 
                     <button 
-                        className="button-green button-green_footer"  
+                        className="button-green button-green_footer button-green_footer_type-popup"  
                         type='submit'
                     >
-                        <p className="button-green__text">Оставить заявку</p>
+                        <p className="button-green__text button-green__text_type-popup">Оставить заявку</p>
                     </button>
 
                 </form>
