@@ -73,6 +73,7 @@
 @media screen and (max-width: 1150px) {
     .about-work__img_fifth {
         background-image: url(../../images/1024/img-5-1024.jpg);
+        background-size: cover;
     }
     .about-work__img-left_sixth {
         background-image: url(../../images/1024/img-6-1024.jpg);
@@ -98,6 +99,7 @@
     }
     .about-work__img_fifth {
         background-image: url(../../images/768/img-5-768.jpg);
+        background-size: contain;
     }
     .about-work__img-left_sixth {
         background-image: url(../../images/768/img-6-768.jpg);
@@ -123,6 +125,17 @@
         font-size: 20px;
         line-height: 25px;
     }
+    .about-work__img_fifth {
+        background-image: url(../../images/425/img-5-425.jpg);
+    }
+    .about-work__img-left_sixth {
+        background-image: url(../../images/425/img-6-425.jpg);
+    }
+    .about-work__img_seventh {
+        background-image: url(../../images/425/img-7-425.jpg);
+    }
+}
+@media screen and (max-width: 415px) {
     .about-work__img_fifth {
         background-image: url(../../images/320/img-5-320.jpg);
     }
