@@ -1,7 +1,4 @@
 import React from 'react';
-import cardGrass from '../../images/card-grass.jpg'
-import imgFive from '../../images/img-5.jpg'
-import imgSix from '../../images/img-6.jpg'
 
 function LandscapeCards(props) {
 
@@ -14,7 +11,7 @@ function LandscapeCards(props) {
 
       <div className="about-work__right">
         <div className="about-work__img-container">
-          <img className="about-work__img" src={cardGrass} alt="Фотография образец" />
+          <div className="about-work__img about-work__img_fifth"></div>
         </div>
         <div className="about-work__container about-work__container_green">
           <div className="about-work__description-container">
@@ -35,7 +32,7 @@ function LandscapeCards(props) {
 
       <div className="about-work__left">
         <div className="about-work__img-container-left">
-          <img className="about-work__img-left" src={imgFive} alt="Фотография образец" />
+          <div className="about-work__img-left about-work__img-left_sixth"></div>
         </div>
         <div className="about-work__container about-work__container_green">
           <div className="about-work__description-container-left">
@@ -56,7 +53,7 @@ function LandscapeCards(props) {
 
       <div className="about-work__right">
         <div className="about-work__img-container">
-          <img className="about-work__img" src={imgSix} alt="Фотография образец" />
+          <div className="about-work__img about-work__img_seventh"></div>
         </div>
         <div className="about-work__container about-work__container_green">
           <div className="about-work__description-container">

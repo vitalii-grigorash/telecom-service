@@ -139,3 +139,23 @@
         margin: 30px auto 0;
     }
 }
+@media screen and (max-width: 415px) {
+    .landscape__heading {
+        max-width: 290px;
+    }
+    .landscape__heading-row {
+        width: 290px;
+    }
+    .landscape__description-container {
+        margin: 0 0 16px;
+    }
+    .landscape__img {
+        width: 118px;
+        height: 118px;
+    }
+    .landscape__img-grass {
+        width: 290px;
+        height: 50px;
+        margin: 55px auto 0;
+    }
+}

@@ -57,3 +57,17 @@
         margin: 165px auto 0;
     }
 }
+@media screen and (max-width: 415px) {
+    .main__background {
+        min-height: 568px;
+        padding-top: 15px;
+    }
+    .heading__header {
+        font-size: 32px;
+        line-height: 100%;
+        max-width: 320px;
+    }
+    .heading__container {
+        margin: 102px auto 0;
+    }
+}

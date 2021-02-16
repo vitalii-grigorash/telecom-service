@@ -1,8 +1,4 @@
 import React from 'react';
-import asphaltImg from '../../images/asphalt-img.jpg'
-import imgTwo from '../../images/img-2.jpg'
-import imgThree from '../../images/img-3.jpg'
-import imgFour from '../../images/img-4.jpg'
 
 function AsphaltCards (props) {
 
@@ -16,7 +12,7 @@ function AsphaltCards (props) {
 
             <div className="about-work__right">
                 <div className="about-work__img-container">
-                    <img className="about-work__img" src={asphaltImg} alt="Фотография образец" />   
+                    <div className="about-work__img about-work__img_first"></div>   
                 </div>
                 <div className="about-work__container">
                     <div className="about-work__description-container">
@@ -45,7 +41,7 @@ function AsphaltCards (props) {
 
             <div className="about-work__left">
                 <div className="about-work__img-container-left">
-                    <img className="about-work__img-left" src={imgTwo} alt="Фотография образец" />
+                    <div className="about-work__img-left about-work__img-left_second"></div>
                 </div>
                 <div className="about-work__container">
                     <div className="about-work__description-container-left">
@@ -73,7 +69,7 @@ function AsphaltCards (props) {
 
             <div className="about-work__right">
                 <div className="about-work__img-container">
-                    <img className="about-work__img" src={imgThree} alt="Фотография образец" />
+                    <div className="about-work__img about-work__img_third"></div>
                 </div>
                 <div className="about-work__container">
                     <div className="about-work__description-container">
@@ -93,7 +89,7 @@ function AsphaltCards (props) {
 
             <div className="about-work__left">
                 <div className="about-work__img-container-left">
-                    <img className="about-work__img-left" src={imgFour} alt="Фотография образец" />
+                    <div className="about-work__img-left about-work__img-left_fourth"></div>
                 </div>
                 <div className="about-work__container">
                     <div className="about-work__description-container-left">

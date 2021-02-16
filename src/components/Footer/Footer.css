@@ -284,3 +284,21 @@
         line-height: 25px;
     }
 }
+@media screen and (max-width: 415px) {
+    .footer {
+        max-width: 290px;
+    }
+    .footer__info-container {
+        max-width: 290px;
+    }
+    .footer__map-container {
+        max-height: 214px;
+        overflow: hidden;
+    }
+    .header__row_column {
+        margin: 32px auto 48px 22px;
+    }
+    .footer__form {
+        width: 290px;
+    }
+}

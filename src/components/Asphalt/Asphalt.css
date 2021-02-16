@@ -70,3 +70,9 @@
         margin: 0 0 15px;
     }
 }
+@media screen and (max-width: 415px) {
+    .asphalt__description-container {
+        max-width: 290px;
+        margin: 0 auto 64px;
+    }
+}
