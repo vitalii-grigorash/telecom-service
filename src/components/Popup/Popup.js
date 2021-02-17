@@ -6,18 +6,11 @@ function Popup(props) {
     const { 
         isOpen,
         onClose,
-        onSendForm,
     } = props;
 
     const name = Validation();
     const number = Validation();
     const description = Validation();
-
-    function handleSubmit(evt) {
-        evt.preventDefault();
-        onSendForm(name.value, number.value, description.value)
-        closePopup();
-    }
 
     function closePopup () {
         onClose();
@@ -32,7 +25,7 @@ function Popup(props) {
         if (evt.target.classList.contains('popup_opened')) {
             closePopup();
         }
-      }
+    }
 
     return (
         <div className={`popup ${isOpen && 'popup_opened'}`} onMouseDown={handleOverlayClose}>
@@ -41,9 +34,8 @@ function Popup(props) {
 
                 <form 
                     className="footer__form footer__form_type-popup"
-                    onSubmit={handleSubmit}
-                    // action="https://formspree.io/f/xzbkwleg"
-                    // method="POST"
+                    action="https://formspree.io/f/xzbkwleg"
+                    method="POST"
                 >
 
                     <button
@@ -88,7 +80,7 @@ function Popup(props) {
                     <textarea 
                         type="text"
                         className="footer__form-textarea footer__form-textarea_type-popup"
-                        name="Комментарии"
+                        name="Комментарий"
                         value={description.value}
                         onChange={description.onChange}
                     ></textarea>

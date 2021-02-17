@@ -3,25 +3,11 @@ import map from '../../images/map.jpg'
 import { Validation } from '../../utils/Validation';
 import logo from '../../images/logo-1.jpg';
 
-function Footer(props) {
-
-    const { 
-        onSendForm,
-    } = props;
+function Footer() {
 
     const name = Validation();
     const number = Validation();
     const description = Validation();
-
-    function handleSubmit(evt) {
-        evt.preventDefault();
-        onSendForm(name.value, number.value, description.value)
-        name.setValue('');
-        number.setValue('');
-        description.setValue('');
-        name.setErrorMessage('');
-        number.setErrorMessage('');
-    }
 
     return (
         <div className="footer">
@@ -60,9 +46,8 @@ function Footer(props) {
 
                 <form 
                     className="footer__form"
-                    onSubmit={handleSubmit}
-                    // action="https://formspree.io/f/xzbkwleg"
-                    // method="POST"
+                    action="https://formspree.io/f/xzbkwleg"
+                    method="POST"
                 >
 
                     <h3 className="footer__form-heading">Остались вопросы? Наш специалист свяжется с вами</h3>
@@ -101,14 +86,15 @@ function Footer(props) {
                     <textarea 
                         type="text"
                         className="footer__form-textarea"
-                        name="Комментарии"
+                        name="Комментарий"
                         value={description.value}
                         onChange={description.onChange}
                     ></textarea>
 
                     <button 
                         className="button-green button-green_footer"
-                        type='submit'>
+                        type='submit'
+                    >
                         <p className="button-green__text">Оставить заявку</p>
                     </button>
 

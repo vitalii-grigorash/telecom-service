@@ -2,34 +2,12 @@ import React, {useState} from 'react';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer'
 import Popup from '../Popup/Popup'
-// import * as SendEmailApi from '../../utils/SendEmailApi';
 
 function App() {
 
   const [isPopupOpen, setPopupOpen] = useState(false);
 
   const [isMobilePopupOpen, setIsMobilePopupOpen] = useState(false);
-
-  function handleSendForm(name, number, description) {
-
-    const formData = {
-      name: name,
-      number: number,
-      description: description,
-    }
-
-    const response = fetch ('../../../public/sendmail.php', {
-      method: 'POST',
-      body: formData,
-    });
-    if (response.ok) {
-      const result = response.json();
-      console.log(result.message);
-    } else {
-      console.log('Ошибка');
-    }
-
-  }
 
   function handlePopupOpen () {
     setPopupOpen(true);
@@ -57,14 +35,11 @@ function App() {
         isMobilePopupOpen={isMobilePopupOpen}
       />
 
-      <Footer
-        onSendForm={handleSendForm}
-      />
+      <Footer />
 
       <Popup
         isOpen={isPopupOpen}
         onClose={handlePopupClose}
-        onSendForm={handleSendForm}
       />
 
     </div>
