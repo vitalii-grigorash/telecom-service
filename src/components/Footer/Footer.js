@@ -24,22 +24,18 @@ function Footer() {
                     </a>
 
                     <div className="header__row header__row_column">
-                           
                         <a href="tel:+79062681292" className="phone-numbers__link phone-numbers__link_black">
                             <p className="phone-numbers__icon phone-numbers__icon_black"></p>
                             +7 (906) 268-12-92
                         </a>
-
                         <a href="mailto:ooo.telecomservice@yandex.ru" className="header-info__container header-info__container_black">
                             <p className="header-info__icon-email header-info__icon-email_black"></p>
                             ooo.telecomservice@yandex.ru
                         </a>
-
                         <a href="https://yandex.ru/maps/2/saint-petersburg/house/rybatskiy_prospekt_18/Z0kYcwdjTE0OQFtjfXR1cXVrYQ" target="_blank" rel="nofollow noreferrer" className="header-info__container header-info__container_black">
                             <p className="header-info__icon-vector header-info__icon-vector_black"></p>
                             г. Санкт-Петербург, <br/> Рыбацкий проспект, д. 18
                         </a>
-
                     </div>
 
                 </div>
