@@ -34,7 +34,7 @@ function Popup(props) {
 
                 <form 
                     className="footer__form footer__form_type-popup"
-                    action="https://formspree.io/f/xzbkwleg"
+                    action="https://formspree.io/f/mqkgoglk"
                     method="POST"
                 >
 

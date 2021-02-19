@@ -42,7 +42,7 @@ function Footer() {
 
                 <form 
                     className="footer__form"
-                    action="https://formspree.io/f/xzbkwleg"
+                    action="https://formspree.io/f/mqkgoglk"
                     method="POST"
                 >
 
