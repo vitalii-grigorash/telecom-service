@@ -25,7 +25,7 @@ function Main (props) {
           />
 
           <div className="heading__container">
-            <h1 className="heading__header">ТелекомСервис — Благоустройство территорий и асфальтирование</h1>
+            <h1 className="heading__header">ТелекомСервис — не только ваш надежный партнер в сфере телекоммуникаций, а также в благоустройстве территорий и асфалтировании</h1>
             <button className="button-green" type="button" onClick={onOpenPopup}>
               <p className="button-green__text">Оставить заявку</p>
             </button>
