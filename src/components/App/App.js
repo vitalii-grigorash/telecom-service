@@ -2,13 +2,15 @@ import React, {useState} from 'react';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer'
 import Popup from '../Popup/Popup'
+import SuccessPopup from '../SuccessPopup/SuccessPopup'
 import * as FeedbackForm from '../../utils/FeedbackForm';
 
 function App() {
 
   const [isPopupOpen, setPopupOpen] = useState(false);
-
+  const [isSuccessPopupOpen, setSuccessPopupOpen] = useState(false);
   const [isMobilePopupOpen, setIsMobilePopupOpen] = useState(false);
+  const [submitButtonText, setSubmitButtonText] = useState('Оставить заявку')
 
   function handlePopupOpen () {
     setPopupOpen(true);
@@ -16,6 +18,14 @@ function App() {
 
   function handlePopupClose () {
     setPopupOpen(false);
+  }
+
+  function handleSuccessPopupOpen () {
+    setSuccessPopupOpen(true);
+  }
+
+  function handleSuccessPopupClose () {
+    setSuccessPopupOpen(false);
   }
 
   function handleMobilePopupOpen() {
@@ -27,13 +37,18 @@ function App() {
   }
 
   function feedbackFormSend (name, number, comment) {
+    setSubmitButtonText('Отправка...')
     FeedbackForm.sendForm(name, number, comment)
-    .then((res) => {
-      console.log(res);
+    .then(() => {
+      handlePopupClose();
+      handleSuccessPopupOpen();
     })
     .catch((err) => {
       console.log(err.message);
     })
+    .finally(() => {
+      setSubmitButtonText('Оставить заявку');
+    });
   }
   
   return (
@@ -48,12 +63,19 @@ function App() {
 
       <Footer 
         onSendForm={feedbackFormSend}
+        submitButtonText={submitButtonText}
       />
 
       <Popup
         isOpen={isPopupOpen}
         onClose={handlePopupClose}
         onSendForm={feedbackFormSend}
+        submitButtonText={submitButtonText}
+      />
+
+      <SuccessPopup
+        isOpen={isSuccessPopupOpen}
+        onClose={handleSuccessPopupClose}
       />
 
     </div>

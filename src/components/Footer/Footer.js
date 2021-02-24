@@ -7,6 +7,7 @@ function Footer(props) {
 
     const { 
         onSendForm,
+        submitButtonText,
     } = props;
 
     const name = Validation();
@@ -55,8 +56,6 @@ function Footer(props) {
                 <form 
                     className="footer__form"
                     onSubmit={submitForm}
-                    // action="https://formspree.io/f/mqkgoglk"
-                    // method="POST"
                 >
 
                     <h3 className="footer__form-heading">Остались вопросы? Наш специалист свяжется с вами</h3>
@@ -104,7 +103,7 @@ function Footer(props) {
                         className="button-green button-green_footer"
                         type='submit'
                     >
-                        <p className="button-green__text">Оставить заявку</p>
+                        <p className="button-green__text">{submitButtonText}</p>
                     </button>
 
                 </form>

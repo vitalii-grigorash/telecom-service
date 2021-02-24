@@ -7,19 +7,24 @@ function Popup(props) {
         isOpen,
         onClose,
         onSendForm,
+        submitButtonText,
     } = props;
 
     const name = Validation();
     const number = Validation();
     const comment = Validation();
 
-    function closePopup () {
-        onClose();
+    function clearAll () {
         name.setValue('');
         number.setValue('');
         comment.setValue('');
         name.setErrorMessage('');
         number.setErrorMessage('');
+    }
+
+    function closePopup () {
+        onClose();
+        clearAll();
     }
 
     const handleOverlayClose = (evt) => {
@@ -31,7 +36,7 @@ function Popup(props) {
     function submitForm(evt) {
         evt.preventDefault();
         onSendForm(name.value, number.value, comment.value);
-        closePopup();
+        clearAll();
     }
 
     return (
@@ -42,8 +47,6 @@ function Popup(props) {
                 <form 
                     className="footer__form footer__form_type-popup"
                     onSubmit={submitForm}
-                    // action="https://formspree.io/f/mqkgoglk"
-                    // method="POST"
                 >
 
                     <button
@@ -97,7 +100,7 @@ function Popup(props) {
                         className="button-green button-green_footer button-green_footer_type-popup"  
                         type='submit'
                     >
-                        <p className="button-green__text button-green__text_type-popup">Оставить заявку</p>
+                        <p className="button-green__text button-green__text_type-popup">{submitButtonText}</p>
                     </button>
 
                 </form>
