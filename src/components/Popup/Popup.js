@@ -6,17 +6,18 @@ function Popup(props) {
     const { 
         isOpen,
         onClose,
+        onSendForm,
     } = props;
 
     const name = Validation();
     const number = Validation();
-    const description = Validation();
+    const comment = Validation();
 
     function closePopup () {
         onClose();
         name.setValue('');
         number.setValue('');
-        description.setValue('');
+        comment.setValue('');
         name.setErrorMessage('');
         number.setErrorMessage('');
     }
@@ -27,6 +28,12 @@ function Popup(props) {
         }
     }
 
+    function submitForm(evt) {
+        evt.preventDefault();
+        onSendForm(name.value, number.value, comment.value);
+        closePopup();
+    }
+
     return (
         <div className={`popup ${isOpen && 'popup_opened'}`} onMouseDown={handleOverlayClose}>
 
@@ -34,8 +41,9 @@ function Popup(props) {
 
                 <form 
                     className="footer__form footer__form_type-popup"
-                    action="https://formspree.io/f/mqkgoglk"
-                    method="POST"
+                    onSubmit={submitForm}
+                    // action="https://formspree.io/f/mqkgoglk"
+                    // method="POST"
                 >
 
                     <button
@@ -51,7 +59,7 @@ function Popup(props) {
                         type="text"
                         className="footer__form-input footer__form-input_type-popup"
                         id="name-input"
-                        name="Имя"
+                        name="name"
                         value={name.value}
                         onChange={name.onChange}
                         minLength="2"
@@ -66,7 +74,7 @@ function Popup(props) {
                         type="text"
                         className="footer__form-input footer__form-input_type-popup"
                         id="number-input"
-                        name="Номер телефона"
+                        name="number"
                         value={number.value}
                         onChange={number.onChange}
                         minLength="3"
@@ -80,9 +88,9 @@ function Popup(props) {
                     <textarea 
                         type="text"
                         className="footer__form-textarea footer__form-textarea_type-popup"
-                        name="Комментарий"
-                        value={description.value}
-                        onChange={description.onChange}
+                        name="comment"
+                        value={comment.value}
+                        onChange={comment.onChange}
                     ></textarea>
 
                     <button 

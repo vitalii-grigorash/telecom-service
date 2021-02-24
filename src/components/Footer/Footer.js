@@ -3,11 +3,23 @@ import map from '../../images/map.jpg'
 import { Validation } from '../../utils/Validation';
 import logo from '../../images/logo-1.jpg';
 
-function Footer() {
+function Footer(props) {
+
+    const { 
+        onSendForm,
+    } = props;
 
     const name = Validation();
     const number = Validation();
-    const description = Validation();
+    const comment = Validation();
+
+    function submitForm(evt) {
+        evt.preventDefault();
+        onSendForm(name.value, number.value, comment.value);
+        name.setValue('');
+        number.setValue('');
+        comment.setValue('');
+    }
 
     return (
         <div className="footer">
@@ -42,8 +54,9 @@ function Footer() {
 
                 <form 
                     className="footer__form"
-                    action="https://formspree.io/f/mqkgoglk"
-                    method="POST"
+                    onSubmit={submitForm}
+                    // action="https://formspree.io/f/mqkgoglk"
+                    // method="POST"
                 >
 
                     <h3 className="footer__form-heading">Остались вопросы? Наш специалист свяжется с вами</h3>
@@ -53,7 +66,7 @@ function Footer() {
                         type="text"
                         className="footer__form-input"
                         id="name-input"
-                        name="Имя"
+                        name="name"
                         value={name.value}
                         onChange={name.onChange}
                         minLength="2"
@@ -68,7 +81,7 @@ function Footer() {
                         type="text"
                         className="footer__form-input"
                         id="number-input"
-                        name="Номер телефона"
+                        name="number"
                         value={number.value}
                         onChange={number.onChange}
                         minLength="3"
@@ -82,9 +95,9 @@ function Footer() {
                     <textarea 
                         type="text"
                         className="footer__form-textarea"
-                        name="Комментарий"
-                        value={description.value}
-                        onChange={description.onChange}
+                        name="comment"
+                        value={comment.value}
+                        onChange={comment.onChange}
                     ></textarea>
 
                     <button 
