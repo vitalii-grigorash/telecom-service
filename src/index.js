@@ -1,14 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { hydrate, render } from "react-dom";
 import './index.css';
 import App from '../src/components/App/App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
+const APP = (
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
 
-reportWebVitals();
+const rootElement = document.getElementById("root");
+
+if (rootElement.hasChildNodes()) {
+  hydrate(APP, rootElement);
+} else {
+  render(APP, rootElement);
+}
+
