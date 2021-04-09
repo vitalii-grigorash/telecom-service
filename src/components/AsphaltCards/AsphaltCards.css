@@ -99,6 +99,7 @@
     height: 55px;
     border: 1px solid #009EE2;
     border-radius: 6px;
+    background-color: #EAEAEA;
 }
 .about-work-button:hover {
     cursor: pointer;
@@ -131,6 +132,7 @@
     height: 55px;
     border: 1px solid #009EE2;
     border-radius: 6px;
+    background-color: #EAEAEA;
 }
 .about-work-button-left:hover {
     cursor: pointer;
