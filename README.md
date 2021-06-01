@@ -1,4 +1,4 @@
-# SPA TelecomService разработанное на React.js
+# SPA TelecomService разработанное на React.js.
 ---
 ## Описание
 
